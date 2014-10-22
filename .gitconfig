@@ -30,3 +30,5 @@
     default = simple
 [include]
     path = ~/.gitconfig.local
+[core]
+    excludesfile = ~/.gitignore_global
