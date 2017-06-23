@@ -17,15 +17,11 @@
     last = log -1 HEAD
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
     log1 = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-    pf = pull --ff-only
     ff = pull --ff-only
-    pu = pull
     st = status
-    smu = submodule update
-    smur = submodule update --recursive
     wtf = !git-wtf
     get-branch = !git branch | grep '*' | cut -b 3-
-    cleanup = !git sweep cleanup --master=integration --skip=master
+    cleanup = !git sweep cleanup --skip=release/moneysupermarket
 [push]
     default = simple
 [include]
