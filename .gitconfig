@@ -1,6 +1,7 @@
 [user]
     name = Martin Meredith
     email = martin@sourceguru.net
+	signingkey = BCAA81A3C39DEBAB
 [github]
     user = Mezzle
 [color]
@@ -22,9 +23,13 @@
     wtf = !git-wtf
     get-branch = !git branch | grep '*' | cut -b 3-
     cleanup = !git sweep cleanup --skip=release/moneysupermarket
+    subtrees = !"git log | grep git-subtree-dir | awk '{ print $2 }' | sort | uniq"
 [push]
     default = simple
 [include]
     path = ~/.gitconfig.local
 [core]
     excludesfile = ~/.gitignore_global
+	autocrlf = input
+[commit]
+	gpgsign = true
