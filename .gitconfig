@@ -32,4 +32,4 @@
     excludesfile = ~/.gitignore_global
 	autocrlf = input
 [commit]
-#	gpgsign = true
+	gpgsign = true
