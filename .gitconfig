@@ -1,7 +1,6 @@
 [user]
     name = Martin Meredith
-    email = martin.meredith@hystreet.co.uk
-    signingkey = BCAA81A3C39DEBAB
+    email = martin@sourceguru.net
 [github]
     user = Mezzle
 [color]
@@ -25,13 +24,9 @@
     dlt = !"git fetch --tags && git log1 $(git describe --abbrev=0)..master"
 [push]
     default = simple
-[include]
-    path = ~/.gitconfig.local
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
-[commit]
-    gpgsign = true
 [rerere]
 	enabled = true
 [filter "lfs"]
@@ -39,3 +34,5 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[include]
+    path = ~/.gitconfig.local
