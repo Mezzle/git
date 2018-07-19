@@ -32,7 +32,6 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 .nfs*
@@ -45,3 +44,5 @@ Thumbs.db
 *.iml
 
 ops/certs
+
+.nyc_output
