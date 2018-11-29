@@ -1,7 +1,6 @@
 [user]
     name = Martin Meredith
-    email = martin@sourceguru.net
-    signingkey = BCAA81A3C39DEBAB
+	email = martin.meredith@magic42.co.uk
 [github]
     user = Mezzle
 [color]
@@ -31,7 +30,5 @@
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
-[commit]
-    gpgsign = true
 [rerere]
     enabled = true
